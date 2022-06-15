@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/bgkinan">
+
+    <!--    Element ini Untuk menampilkan foto profil
+            android:layout_marginStart="32dp"  dan  android:layout_marginEnd="32dp" dan untuk memberi jarak elemen dari kanan kiri layar.
+            android:layout_width="330dp" untuk menentukan lebar layout element sedangkan  android:layout_height="199dp" untuk menentukan tinggi layout element.
+     -->
+    <ImageView
+        android:id="@+id/pp1"
+        android:layout_width="330dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/ppkinan1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pp1" />
+
+
+    <!--
+    Element ini Untuk input username.
+    android:id="@+id/username" untuk menentukan id elemen ini, id tersebut akan dipanggil di kelas MainActivity.
+    android:inputType="textPersonName" untuk menentukan tipe input.
+    app:layout_constraintTop_toBottomOf="@+id/pp1" untuk menentukan bahwa elemen ini berada di sisi bawah dari “@+id/pp1”
+ -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="70dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pp1" />
+
+
+    <!--
+       Element ini Untuk input password.
+       android:id="@+id/password" untuk menentukan id elemen ini, id tersebut akan dipanggil di kelas MainActivity.
+       android:inputType="textPassword" untuk menentukan tipe input ini adalah berupa password.
+       app:layout_constraintTop_toBottomOf="@+id/username" untuk menentukan bahwa elemen ini berada di sisi bawah dari “@+id/username”
+    -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <!--
+       Element dipakai sebagai tombol untuk mengirim data username dan password yang akan divalidasi di kelas MainActivity
+       android:id="@+id/btnLogin" untuk menentukan id elemen ini, id tersebut akan dipanggil di kelas MainActivity.
+    -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="#20BDFF"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

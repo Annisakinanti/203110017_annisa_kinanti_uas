@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome"
+    android:background="@drawable/bgkinan2">
+
+    <!-- elemen ini untuk menampilkan foto profil saya
+-->
+    <ImageView
+        android:id="@+id/ppkinann"
+        android:layout_width="0dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/fotoku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pp2" />
+
+    <!-- elemen ini untuk menampilkan nama profil profil saya.
+      android:text="@string/annisakinanti" adalah lokasi penyimpanan tulisan nama ini.
+      ndroid:textColor="#FFFFFF" untuk menentukan warna text, yaitu putih.
+-->
+    <TextView
+        android:id="@+id/namaku"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/annisakinanti"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ppkinann"
+        tools:ignore="TextContrastCheck" />
+
+    <!--    elemen ini untuk menampilkan tulisan tanggal lahor-->
+    <TextView
+        android:id="@+id/ttl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/_15_desember_2001"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namaku"
+        tools:ignore="TextContrastCheck" />
+
+
+    <ImageView
+        android:id="@+id/quote"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/quote2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ttl"
+        app:srcCompat="@drawable/quote"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/prodi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/rekayasa_perangkat_lunak_aplikasi"
+        android:textAlignment="center"
+        android:textColor="#445BDD"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quote" />
+
+    <!--
+     Element dipakai sebagai tombol untuk membuka link akun instagtam di mana nama id ditentukan pada baris android:id="@+id/ig"
+  -->
+    <Button
+        android:id="@+id/ig"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#7F00FF"
+        android:text="@string/kinan_ak15"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutdi" />
+
+    <!--
+  Element dipakai sebagai tombol untuk membuka link send email di mana nama id ditentukan pada baris   android:id="@+id/email"
+-->
+
+    <Button
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#E100FF"
+        android:text="@string/kinantiak833_gmail_com"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ig"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/logoutdi"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/utdii"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prodi"
+        app:srcCompat="@drawable/utdi_4c" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

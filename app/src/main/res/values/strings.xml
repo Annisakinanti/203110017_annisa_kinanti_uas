@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">203110017_Annisa Kinanti_UAS</string>
+    <string name="bg">bg</string>
+    <string name="konverter_suhu">Konverter Suhu</string>
+    <string name="masukkan_suhu">Masukkan Suhu</string>
+    <string name="konversi">Konversi</string>
+    <string name="about_me">About Me</string>
+    <string name="ppkinan1">ppkinan</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="ppkinan2">ppkinan2</string>
+    <string name="annisakinanti">Annisa Kinanti</string>
+    <string name="fotoku">fotoku</string>
+    <string name="_15_desember_2001">15 Desember 2001</string>
+    <string name="quote2">quote</string>
+    <string name="rekayasa_perangkat_lunak_aplikasi">Rekayasa Perangkat Lunak Aplikasi</string>
+    <string name="universitas_teknlogi_digital_indonesia">Universitas Teknlogi Digital Indonesia</string>
+    <string name="kinan_ak15">\@kinanti_ak15</string>
+    <string name="kinantiak833_gmail_com">kinantiak833@gmail.com</string>
+    <string name="utdii">utdii</string>
+    <string name="email" type="id">email</string>
+    <string name="ig" type="id">ig</string>
+    <string name="logoutdi" type="id">logoutdi</string>
+    <string name="prodi" type="id">prodi</string>
+    <string name="quote" type="id">quote</string>
+    <string name="ttl" type="id">ttl</string>
+    <string name="namaku" type="id">namaku</string>
+    <string name="ppkinann" type="id">ppkinann</string>
+</resources>
